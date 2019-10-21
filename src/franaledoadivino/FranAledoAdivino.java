@@ -15,12 +15,12 @@ public class FranAledoAdivino {
 
    public static void main(String[] args) {
         int n = 0,cont = 0;
-        int x = (int) (500 *Math.random());
-        //System.out.print(x);
+        int x = (int) (50 *Math.random());
+        System.out.print(x);
         Scanner sc = new Scanner(System.in);
         do {
             System.out.print("\nIntroduce el valor de X: ");
-            n = sc.nextInt();
+            n = sc.nextInt(10);
             if (n > x) {
                 System.out.print("Te pasaste Amigo");
             } else if (n < x){
